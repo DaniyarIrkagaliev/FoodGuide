@@ -1,0 +1,94 @@
+$primary-color: #f4f3f1;
+$second-color: #435464;
+$third-color: #c5ac8e;
+
+.map {
+  text-align: center;
+  background-color: #333;
+  height: 101vh;
+  width: 99vw;
+}
+
+html,
+body {
+  font-family: 'Measure', Regular, sans-serif;
+  background-color: $primary-color;
+}
+
+
+#about {
+  min-height: 78vh;
+
+  .header, .about-text {
+    text-align: center
+  }
+
+  .purpose {
+
+    h1, h3 {
+      text-align: center
+    }
+
+    .list-style {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      //text-align: center;
+      li {
+        margin-bottom: 6px;
+        margin-left: 6px;
+        list-style: none;
+        padding: 0;
+
+        &:before {
+          content: "*";
+          color: #5ca9fb;
+          font-size: 11px;
+          font-weight: 300;
+          padding-right: 8px;
+        }
+      }
+    }
+
+  }
+}
+
+#restaurant {
+  .product-page {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .product-page__title {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .product-page__image {
+    margin: 20px 0;
+  }
+
+  .product-page__image img {
+    max-height: 300px;
+    width: auto;
+  }
+
+  .product-page__details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .product-page__type {
+    font-size: 1.5rem;
+  }
+
+  .product-page__work-time {
+    font-size: 1.2rem;
+  }
+
+  .product-page__cuisine {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,106 @@
+$primary-color: #f4f3f1;
+$second-color: #7da0c0;
+$third-color: #c5ac8e;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.app {
+  width: 98vw;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+}
+.login-box {
+  z-index: 3;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(-90deg,
+          $second-color 35%,
+          $second-color 100%);
+  border-radius: .95rem;
+  padding: 7vh 5vw;
+  margin: 0 auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0.6vh 0.6vh 0.6vh 0.6vh rgba(0, 0, 0, 0.1);
+}
+.text-center {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2vh;
+  margin: -3vh 0 2vh;
+  display: block;
+  text-align: center;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 2vh;
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.8vh;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+input {
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+  background: transparent;
+  width: 100%;
+  padding: 1vh 0 1vh 0;
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.89);
+  &:focus {
+    border: none;
+    outline: none;
+    border-bottom: 0.1vh solid #000000;
+  }
+}
+input:focus ~ label, valid ~ label {
+  top: -2vh;
+  font-size: 1.2vh;
+}
+.btn1 {
+  font-size: 1.8vh;
+  color: #fff;
+  background-color: #BFA08F;
+  outline: none;
+  border: 0;
+  padding: 1vh 2vw;
+  text-transform: uppercase;
+  margin-top: 5vh;
+  border-radius: .65rem;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+  transition: 0.5s;
+}
+.btn-register {
+  font-size: 1.8vh;
+  color: #fff;
+  background-color: $third-color;
+  outline: none;
+  border: 0;
+  border-radius: .65rem;
+  padding: 1vh 2vw;
+  text-transform: uppercase;
+  margin-top: 5vh;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+  transition: 0.5s;
+  &:hover {
+    background-color: #0C7A49;
+  }
+}

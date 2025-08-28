@@ -1,0 +1,44 @@
+$primary-color: #f4f3f1;
+$second-color: #435464;
+$third-color: #c5ac8e;
+
+.footer {
+  .footer-body {
+    z-index: 2;
+    border-radius: 0.5vh;
+    height: 5vh;
+    background: $second-color;
+    //background: linear-gradient(90deg, rgb(249, 106, 0) 35%, rgb(253, 184, 0) 100%);
+
+    .footer-elements {
+      display: flex;
+      justify-content: end;
+
+      .footer-element {
+        line-height: 4.6vh;
+        margin-right: 0.5em;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .below-body {
+    text-align: center;
+    a{
+      color: #ce5200;
+    }
+  }
+}
